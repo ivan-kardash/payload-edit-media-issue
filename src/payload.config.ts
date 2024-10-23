@@ -29,6 +29,7 @@ export default buildConfig({
     pool: {
       connectionString: process.env.DATABASE_URI || '',
     },
+    schemaName: process.env.PGSCHEMA,
   }),
   sharp,
   plugins: [
